@@ -84,7 +84,7 @@ const EditProfile = () => {
           {/* Removed the commented-out duplicate name inputs */}
         </div>
       </section>
-      <button className="mt-4 bg-[#1C2A53] cursor-pointer font-semibold text-white rounded-sm px-3 py-1">
+      <button className="mt-4 bg-[#1C2A53] cursor-pointer font-semibold text-white rounded-sm px-3 py-2">
         Make Change
       </button>
       <div className={`absolute top-8 right-2 z-10 flex gap-2 bg-green-600 rounded-md text-white items-center p-4 ${showSuccess ? '' : 'hidden'}`}>

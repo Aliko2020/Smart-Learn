@@ -41,11 +41,11 @@ const StudentPage = () => {
       <header className="flex justify-between items-center p-4 bg-[#EAEAEA]">
         <div className="flex flex-col">
           <span>
-            <h3 className="text-lg">Dashboard</h3>
+            <h3>Dashboard</h3>
           </span>
           <span className="hidden sm:block">
             <p className="flex gap-1 items-center">
-              <span className="text-lg font-semibold text-[#1C2A53]">
+              <span className="font-semibold text-[#1C2A53]">
                 {dayOfWeek}
               </span>
               <span>{day}</span>
@@ -150,7 +150,7 @@ const StudentPage = () => {
               <h3 className="text-[#1C2A53] text-lg font-semibold mb-2">
                 NoticeBoard
               </h3>
-              <div className="flex flex-col gap-2 text-gray-400">
+              <div className="flex flex-col gap-2">
                 <div className="bg-white p-2 rounded-md">
                   <p className="">
                     From: <span>Research Methods</span>

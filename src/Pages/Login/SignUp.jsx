@@ -35,9 +35,9 @@ const UserSign = () => {
             <input className="bg-[#EAEAEA]" type="text" />
           </div>
         </div>
-        <button className="bg-[#EAEAEA] rounded-md px-12 py-4 my-4">Sign up</button>
+        <button className="bg-[#1C2A53] text-white font-semibold rounded-md px-8 py-4 my-4">Sign up</button>
         <p className="">
-           have an account? <Link to="/" className="font-bold text-[#1C2A53]">Login</Link>
+           have an account? <Link to="/" className="">Login</Link>
         </p>
       </form>
     </div>

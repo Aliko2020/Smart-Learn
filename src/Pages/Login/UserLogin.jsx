@@ -30,9 +30,9 @@ const UserLogin = () => {
           </div>
           
         </div>
-        <button className="bg-[#EAEAEA] rounded-md px-12 py-4 my-4"><Link to="/studentpage" className="mt-8 bg-[#EAEAEA] rounded-md px-12 py-4 my-4">Login</Link></button>
-        <p className="">
-          Dont have an account? <Link to="/signup" className="font-bold text-[#1C2A53]">Sign up</Link>
+        <button className="bg-[#1C2A53] text-white font-semibold rounded-md px-8 py-4 my-4"><Link to="/studentpage" className="mt-8rounded-md px-12 py-4 my-4">Login</Link></button>
+        <p className="mt-4">
+          Dont have an account? <Link to="/signup">Sign up</Link>
         </p>
       </form>
     </div>
