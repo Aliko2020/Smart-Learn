@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { HiOutlineUpload } from "react-icons/hi";
 import SelecCourse from "./Mui/SelectCourse";
-import SelectLabels from "./Mui/UserDropdown";
 import AssigmentList from "./Mui/Table";
 import { FcApproval } from "react-icons/fc";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const StudentPage = () => {
   const [showSuccess, setShowSuccess] = useState(true);
@@ -56,9 +56,25 @@ const StudentPage = () => {
         </div>
         <div className="flex items-center gap-4">
           <div className="hidden sm:block">
-            <IoIosNotificationsOutline size={26} />
+            {" "}
+            <IoIosNotificationsOutline size={25} />
           </div>
-          <SelectLabels />
+          <div>
+            <div className="flex items-center gap-2">
+              <Link to="/editprofile">
+                <img
+                  className="w-10 h-10 rounded-full cursor-pointer"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Default avatar"
+                />
+              </Link>
+              <div className="flex gap-2 cursor-pointer">
+                <button className="bg-[#EAEAEA] text-[#1C2A53] py-1 ">
+                  Log out
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -85,15 +101,14 @@ const StudentPage = () => {
           <div>
             <SelecCourse />
             <div className="flex flex-col gap-4 p-2">
-              <label htmlFor="Description">Description</label>
-              <input
-                className="appearance-none focus:outline-none w-full h-14 border rounded p-1 border-gray-300"
-                type="text"
-                name=""
+              <label htmlFor="Description">Description:</label>
+              <textarea
+                className="appearance-none focus:outline-none w-full h-24 border rounded p-1 border-gray-300"
+                name="description"
                 placeholder="Optional"
                 value={description}
                 onChange={handleDescriptionChange}
-              />
+              ></textarea>
             </div>
           </div>
           <div className="p-2">

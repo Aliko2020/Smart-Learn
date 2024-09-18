@@ -13,9 +13,8 @@ const EditProfile = () => {
     <div className="flex justify-center">
     <div className="p-8">
       <header className="flex flex-col gap-4">
-        <h3 className="text-lg font-semibold text-[#1C2A53]">Edit Profile</h3>
-        <section className="flex flex-col gap-2 mt-8">
-          {/* Photo section remains the same */}
+        <h3 className="text-lg font-semibold text-[#1C2A53]">Account</h3>
+        <section className="flex flex-col gap-2 mt-4">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4">
               <img
@@ -31,11 +30,17 @@ const EditProfile = () => {
               </div>
             </div>
           </div>
+          <div className="flex gap-2 p-2 bg-[#1C2A53] text-white rounded-sm mt-2">
+            <span>Login as:</span>
+            <span>Aliko Amos</span>
+            <span>CPS 400</span>
+          </div>
         </section>
       </header>
 
+      <p className="mt-8 text-lg font-semibold text-[#1C2A53]">Edit Profile</p>
+
       <section className="flex flex-col sm:flex-row gap-4 my-4">
-        {/* Full-width first and last name inputs on sm and above */}
         <div className="flex flex-col gap-2 sm:w-full">
           <label htmlFor="firstname">First name</label>
           <input
@@ -79,7 +84,7 @@ const EditProfile = () => {
           {/* Removed the commented-out duplicate name inputs */}
         </div>
       </section>
-      <button className="mt-4 bg-[#EAEAEA] cursor-pointer font-semibold text-[#1C2A53] px-3 py-1">
+      <button className="mt-4 bg-[#1C2A53] cursor-pointer font-semibold text-white rounded-sm px-3 py-1">
         Make Change
       </button>
       <div className={`absolute top-8 right-2 z-10 flex gap-2 bg-green-600 rounded-md text-white items-center p-4 ${showSuccess ? '' : 'hidden'}`}>
